@@ -5,6 +5,10 @@ body {
   font-weight: normal;
 }
 
+form {
+  position: relative;
+}
+
 .calculator_title {
   padding: 1rem;
 }
@@ -34,6 +38,9 @@ body {
   justify-content: center;
   font-size: 2rem;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .input_group input {
@@ -52,15 +59,15 @@ body {
 }
 
 @font-face {
-  font-family: "GT-Eesti";
-  src: url("public/GT-Eesti-Display-Regular-2.ttf");
+  font-family: 'GT-Eesti';
+  src: url('public/GT-Eesti-Display-Regular-2.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GT-Eesti-lighter";
-  src: url("public/GT-Eesti-Display-Light.ttf");
+  font-family: 'GT-Eesti-lighter';
+  src: url('public/GT-Eesti-Display-Light.ttf');
   font-weight: lighter;
   font-style: normal;
 }
