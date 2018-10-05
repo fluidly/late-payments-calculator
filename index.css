@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: GT-Eesti;
+  font-weight: normal;
+}
+
+.calculator_title {
+  padding: 1rem;
+}
+
+.calculator_title p {
+  font-family: GT-Eesti-lighter;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.explanation {
+  font-family: GT-Eesti-lighter;
+  font-size: 0.8rem;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.input_group input {
+  padding: 1rem;
+  border: solid black 1px;
+  font-size: 1rem;
+}
+
+.input_group label {
+  font-size: 0.9rem;
+}
+
+.bottom_copy {
+  padding-left: 1rem;
+  font-family: GT-Eesti-lighter;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("public/GT-Eesti-Display-Regular-2.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti-lighter";
+  src: url("public/GT-Eesti-Display-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
