@@ -1,6 +1,6 @@
 ;(function() {
   function calculate({ amount, days, interest }) {
-    const result = ((amount * interest) / 385) * days
+    const result = ((amount * interest) / 365) * days
     return { errors: {}, result }
   }
 
@@ -41,7 +41,7 @@
     init(signal, model)
   }
 
-  const initialValues = { amount: 100, days: 60, interest: 8.75 }
+  const initialValues = { amount: 100, days: 60, interest: 0.875 }
 
   const initalState = {
     values: initialValues,
