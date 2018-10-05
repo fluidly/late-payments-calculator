@@ -1,52 +1,52 @@
-(function() {
+;(function() {
   function calculate({ amount, days, interest }) {
-    const result = amount * interest / 385 * days;
-    return { errors: {}, result };
+    const result = ((amount * interest) / 385) * days
+    return { errors: {}, result }
   }
 
-  const initialValues = { amount: 100, days: 60, interest: 8.75 };
-
-  const initalState = {
-    values: initialValues,
-    result: calculate(initialValues).result
-  };
-
   function onInput(event) {
-    return event.target;
+    return event.target
   }
 
   function update(model, target) {
     const values = Object.assign({}, model.values, {
       [target.id]: target.value
-    });
+    })
 
-    const { errors, result } = calculate(values);
-    return Object.assign({}, model, { values, errors, result });
+    const { errors, result } = calculate(values)
+    return Object.assign({}, model, { values, errors, result })
   }
 
   function init(signal, model) {
-    document.querySelectorAll(".form_input").forEach(function(input) {
-      input.addEventListener("input", signal(onInput));
-    });
-    view(signal, model);
+    document.querySelectorAll('.form_input').forEach(function(input) {
+      input.addEventListener('input', signal(onInput))
+    })
+    view(signal, model)
   }
 
   function view(signal, { values, result }) {
     for (let key in values) {
-      document.getElementById(key).value = values[key];
+      document.getElementById(key).value = values[key]
     }
 
-    document.getElementById("result").textContent =
-      Math.floor(result * 100) / 100;
+    document.getElementById('result').textContent =
+      Math.floor(result * 100) / 100
   }
 
   function mount(model, view) {
     const signal = action => event => {
-      model = update(model, action(event));
-      view(signal, model);
-    };
-    init(signal, model);
+      model = update(model, action(event))
+      view(signal, model)
+    }
+    init(signal, model)
   }
 
-  mount(initalState, view);
-})();
+  const initialValues = { amount: 100, days: 60, interest: 8.75 }
+
+  const initalState = {
+    values: initialValues,
+    result: calculate(initialValues).result
+  }
+
+  mount(initalState, view)
+})()
