@@ -1,6 +1,6 @@
 ;(function() {
   function calculate({ amount, days, interest }) {
-    const result = ((amount * interest) / 365) * days
+    const result = ((amount * (interest / 100)) / 365) * days
     return { errors: {}, result }
   }
 
@@ -30,7 +30,7 @@
     }
 
     document.getElementById('result').textContent =
-      Math.floor(result * 100) / 100
+      '£' + Math.floor(result * 100) / 100
   }
 
   function mount(model, view) {
@@ -41,7 +41,7 @@
     init(signal, model)
   }
 
-  const initialValues = { amount: 100, days: 60, interest: 0.875 }
+  const initialValues = { amount: 100, days: 60, interest: 8.5 }
 
   const initalState = {
     values: initialValues,
