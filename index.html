@@ -1,45 +1,47 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="index.css">
-    <title>Late payments calculator</title>
-  </head>
-  <body>
-    <div class="calculator_title">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="index.css">
+  <title>Late payments calculator</title>
+</head>
+
+<body>
+  <div class="calculator_title">
     <h3>Late Payments Calculator</h3>
     <p>
-    Some copy here describing the calculator
+      Some copy here describing the calculator
     </p>
-    </div>
-    <div>
-  
+  </div>
+  <div>
+    
     <form class="calculator" action="" method="post">
       <div class="input_group">
         <label for="amount">Invoice amount</label>
-        <div>
-          <span>£</span>
-          <input type="text" name="invoice_amount" id="amount" value="100">
-        </div>
+        <input type="text" name="invoice_amount" id="amount" value="100" class="form_input">
       </div>
       <div class="input_group">
         <label for="days">Days invoice overdue</label>
-        <input type="text" name="day_invoice_overdue" id="days" value="60">
+        <input type="text" name="day_invoice_overdue" id="days" value="60" class="form_input">
       </div>
       <div class="input_group">
         <label for="interest">Interest rate</label>
         <span class="explanation">Explanation of what the interest rate is</span>
-        <input type="number" name="interest_rate" id="interest" value="8.75">
+        <input type="number" name="interest_rate" id="interest" value="8.75" class="form_input">
       </div>
       <div class="result">
-        <span>£10</span>
+        <span>£</span><span id="result">10</span>
       </div>
       <p class="bottom_copy">
         short paragraph
       </p>
       
     </div>
-    </form>
-  </body>
+  </form>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
+
+
+
