@@ -42,6 +42,7 @@ form {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 1;
 }
 
 .result_text {
@@ -66,7 +67,6 @@ form {
 .input_group .inline {
   border: solid black 1px;
   padding-left: 0.5rem;
-  width: 100%;
   justify-content: stretch;
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@ form {
 }
 
 .bottom_copy {
-  padding-left: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   font-family: GT-Eesti-lighter;
 }
 
