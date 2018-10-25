@@ -9,7 +9,7 @@
 <body>
   <div class="calculator_title">
     <h3>Late Payments Calculator</h3>
-  
+    
     <p> If a debtor hasn’t paid their invoice on time, you’re entitled to charge interest on this. But how much? And how late does the payment have to be? Our late payment calculator helps you to work it out.</p>
   </div>
   <div>
@@ -19,38 +19,42 @@
         <span class="result_text">Amount of interest:</span>
         <span class="result_amount" id="result"></span>
       </div>
-      <div class="input_group">
-        <label for="amount">Invoice amount</label>
+      <div class="input_groups">
+        <div class="input_group">
+          <label for="amount">Invoice amount</label>
           <span class="inline">
             £<input type="number" name="invoice_amount" id="amount" value="100" class="form_input">
           </span>
+        </div>
+        <div class="input_group">
+          <label for="days">Days invoice overdue</label>
+          <span class="inline">
+            <input type="number" name="day_invoice_overdue" id="days" value="60" class="form_input">
+          </span>
+        </div>
+        <div class="input_group">
+          <label for="interest">Interest rate</label>
+          <span class="explanation">The interest rate is 8% plus the Bank of England base rate (0.5%). </span>
+          <span class="inline">
+            <input type="number" name="interest_rate" id="interest" value="8.75" class="form_input">
+          </span>
+        </div>
       </div>
-      <div class="input_group">
-        <label for="days">Days invoice overdue</label>
-        <span class="inline">
-          <input type="number" name="day_invoice_overdue" id="days" value="60" class="form_input">
-        </span>
-      </div>
-      <div class="input_group">
-        <label for="interest">Interest rate</label>
-        <span class="explanation">The interest rate is 8% plus the Bank of England base rate (0.5%). </span>
-        <span class="inline">
-          <input type="number" name="interest_rate" id="interest" value="8.75" class="form_input">
-        </span>
-      </div>
-      <p class="bottom_copy">
-        Our late payment calculator helps you to work out how much interest you could charge on an overdue payment. Many companies, especially small businesses, know the pain of late payments. When an invoice is overdue it can cripple the cashflow of the business. This can stall growth or, in the worst case scenario, late payments can even cause the business to fail.</p>
-
-      <p class="bottom_copy">
-      The Late Payment of Commercial Debts (Interest) Act 1998 came into force on 1st November 1998 with the aim of helping companies facing these late payment problems by allowing businesses to charge interest on the debts that they are owed.
-      </p>
       
-    </div>
-  </form>
-  <script type="text/javascript" src="index.js"></script>
-</body>
-
-</html>
-
-
-
+        
+    </form>
+  </div>
+  
+    <p class="bottom_copy">
+      Our late payment calculator helps you to work out how much interest you could charge on an overdue payment. Many companies, especially small businesses, know the pain of late payments. When an invoice is overdue it can cripple the cashflow of the business. This can stall growth or, in the worst case scenario, late payments can even cause the business to fail.</p>
+      
+      <p class="bottom_copy">
+        The Late Payment of Commercial Debts (Interest) Act 1998 came into force on 1st November 1998 with the aim of helping companies facing these late payment problems by allowing businesses to charge interest on the debts that they are owed.
+      </p>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+  
+  </html>
+  
+  
+  

@@ -96,3 +96,10 @@ form {
   font-weight: lighter;
   font-style: normal;
 }
+
+@media only screen and (min-width: 800px) {
+  .calculator {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+}
