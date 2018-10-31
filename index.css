@@ -38,6 +38,7 @@ form {
 .explanation {
   font-family: GT-Eesti-lighter;
   font-size: 0.8rem;
+  padding-top: 0.3rem;
 }
 
 .result {
