@@ -21,6 +21,7 @@ form {
   display: flex;
   flex-direction: column;
   color: white;
+  background-color: #1e1136;
 }
 
 .input_groups {
