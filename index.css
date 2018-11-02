@@ -27,7 +27,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #28174B;
+  background-color: #1e1136;
 }
 
 .input_group {
@@ -51,7 +51,7 @@ form {
   padding: 1rem;
   position: sticky;
   top: 0;
-  background-color: #28174B;
+  background-color: #1e1136;
   z-index: 1;
 }
 
@@ -68,7 +68,7 @@ form {
   width: 50%;
   outline: none;
   border: 0;
-  background-color: #28174B;
+  background-color: #1e1136;
   color: white;
 }
 
@@ -84,6 +84,14 @@ form {
   display: flex;
   align-items: center;
   margin-top: 0.3rem;
+}
+
+.input_group .inline:hover {
+  border-color: #31CA88;
+}
+
+.input_group .inline:focus {
+  border: solid red 3px;
 }
 
 .percentage {
